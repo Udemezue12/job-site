@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<div class="container jumbotron">
+<style>
+.navy {
+    color: #67cd6c34; /* Default color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navy:hover {
+    color: #f00; /* Color change on hover */
+}
+
+</style>
+
+
+
+<div class="container" data-aos="zoom-out-up"
+data-aos-easing="linear"
+data-aos-duration="1500">
+    <div>
+
+        <h1>Welcome {{user.firstname}}</h1>
+        
+        
+    </div>
+
+</div>
+<div class="container mt-5 hero"
+
+data-aos="zoom-out-up"
+data-aos-easing="linear"
+data-aos-duration="1500">
+  
+    <div class="jumbotron bg-dark text-light">
+        <h2 class="display-4">Welcome to Job Search Platform</h2>
+        <p class="lead"Your one-stop solution for finding your dream job or the perfect candidate.</p>
+        <hr class="my-4 bg-light">
+        
+        <h3 class="mb-3">Key Features:</h3>
+        <ul class="list-group">
+            <li class="list-group-item bg-dark text-light border-light"><strong>Real-Time Updates:</strong> Get the latest weather information.</li>
+            <li class="list-group-item bg-dark text-light border-light"><strong>Easy to Use:</strong> Simple and clean design.</li>
+            <li class="list-group-item bg-dark text-light border-light"><strong>Account Management:</strong> Register and log in to save your favorite cities.</li>
+        </ul>
+        
+        <p class="mt-4">Built with Django and using the OpenWeatherMap API, our app ensures you have the latest weather information at your fingertips. Stay prepared with the Weather App!</p>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <h2>For Job Seekers</h2>
+            <p>Create a profile, upload your resume, and apply for jobs with ease.</p>
+        </div>
+        <div class="feature">
+            <h2>For Employers</h2>
+            <p>Post job vacancies, manage applications, and find the best candidates.</p>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
